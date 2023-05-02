@@ -9,8 +9,7 @@ form.addEventListener('input',throttle(onInput, 500));
 form.addEventListener('submit', onFormSubmit);
 
 function onInput(evt) {
-    // evt.preventDefault();
-    userInfo[evt.target.name] = evt.target.value;
+     userInfo[evt.target.name] = evt.target.value;
     
     localStorage.setItem(STORAGE_KEY, JSON.stringify(userInfo));
 }
