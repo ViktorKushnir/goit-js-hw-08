@@ -13,4 +13,8 @@ function fillLocalStorage (data) {
 
 player.on('timeupdate', throttle(fillLocalStorage, 1000));
 
-player.setCurrentTime(JSON.parse(localStorage.getItem(STORAGE_KEY)));
+ player.setCurrentTime(JSON.parse(localStorage.getItem(STORAGE_KEY)));
+
+
+
+
